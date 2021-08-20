@@ -468,7 +468,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .container {
   position: relative;
-  bottom: -20vh;
+  bottom: -10vh;
 }
 
 #hero h1 {

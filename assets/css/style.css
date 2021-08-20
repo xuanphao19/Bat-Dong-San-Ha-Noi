@@ -682,6 +682,12 @@ section {
   z-index: 1;
 }
 
+
+
+.zalo-chat-widget-right {
+  right: 15px !important;
+  bottom:80px !important;
+}
 .featured-services .bdshn_bgr {
   background-image: url(../img/BDSnew/1628966937.png);
 

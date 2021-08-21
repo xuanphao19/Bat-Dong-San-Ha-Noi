@@ -124,15 +124,17 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
-#newstitle,
+
 #topbar {
   background: #106eea;
   height: 40px;
-  font-size: 14px;
+  font-size: 16px;
   transition: all 0.5s;
   color: #fff;
   padding: 0;
 }
+
+
 
 #topbar .contact-info i {
   font-style: normal;
@@ -169,16 +171,17 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
 #header {
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
-  height: 86px;
+  height: 60px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 #header.fixed-top {
-  height: 70px;
+  height: 60px;
 }
 
 #header .logo {
@@ -450,11 +453,14 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 85vh;
+  height: 90vh;
   background: url("../img/BDSnew/Hoan-kiem-lake.png") top left;
   background-size: cover;
   position: relative;
 }
+#hero:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.2) !important;}
 
 #hero:before {
   content: "";
@@ -469,6 +475,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .container {
   position: relative;
   bottom: -10vh;
+  opacity: 0.85;
 }
 
 #hero h1 {
@@ -543,6 +550,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
+  #hero:before {
+    content: "";
+    background: rgba(255, 255, 255, 0) !important;}
   .mobile-dpn {
     display: none !important;
   }
@@ -553,8 +563,9 @@ h1, h2, h3, h4, h5, h6 {
   .news-text {
     font-size: 12px !important;
   }
-  #hero {
-    height: 65vh;
+
+  #hero .container {
+    bottom: -20vh;
   }
   #hero h1 {
     font-size: 24px;
@@ -566,8 +577,9 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 24px;
     margin-bottom: 30px;
   }
-  #hero .btn-get-started, #hero .btn-watch-video {
+  #hero, #hero .btn-get-started, #hero .btn-watch-video {
     font-size: 13px;
+    height: 48vh;
   }
 }
 
@@ -576,6 +588,135 @@ h1, h2, h3, h4, h5, h6 {
     height: 120vh;
   }
 }
+/* ---------------------------------------------------------------
+newstitle
+--------------------------------------------------------------- */
+
+#newstitle {
+  height: 60px;
+  transition: all 0.5s;
+  color: #fff;
+  padding: 10px 0;
+  background-image: url(../img/BDSnew/du-ma.png);
+  background-color: transparent;
+  }
+.news-titles{
+  width: 100%;
+  height: 40px;
+  background:#0068ff;
+}
+
+.news-text {
+  color: #e7f1fd;
+  font-size: 22px;
+  font-style: italic;
+}
+
+#Newstoday {
+  position: relative;
+  top: -10px;
+  padding: 0;
+  background: #fff;
+}
+
+/* --------------------- Newstoday content ------------  */
+/* --------------------- Newstoday content ------------  */
+
+.list_newstoday,
+.newstoday-center {
+padding: 0;
+}
+
+.news-item,
+.newstoday-center-img img {
+  padding: 10px 0 0 0;
+}
+.news-item h6 {
+  margin-bottom: 0px !important;
+}
+.thumbblock-img img,
+.newstoday-center-img img {
+  display: block;
+  width: 100%;
+}
+.thumbblock-text {
+  display: block;
+  cursor: pointer;
+  padding: 5px 0 10px 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #222222;
+  white-space: wrap;
+  transition: 0.3s;
+  opacity: 0.7;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #dee2e6 !important;
+  box-sizing: border-box;
+}
+.newstoday-content-center {
+  font-size: 24px;
+  font-weight: 700;
+  color: #f50707;
+}
+.sapo_news {
+  height: 80vh;
+  padding: 0 5px 0 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #413b3b;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 3px !important;
+  background-image: url(../img/scrollbar.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #06ff13;
+}
+
+.right-list{
+  margin-top: -20px;
+  padding: 0 4px ;
+  background-color: #fff;
+}
+.newstoday-sb-right-bgr {
+  background: rgb(244 244 244 / 76%);
+  border-top: 2px solid #d3d3d3;
+}
+.navbar-right {
+  justify-content: flex-start;
+
+}
+.navbar-right li{
+  padding: 0 10px;
+  border-bottom: 1px solid #cec6c6;
+}
+.navbar-right li:last-child {
+  border-left: 5px solid #b8b1b191;
+}
+.navlink-right {
+  font-size: 12px !important;
+  text-transform: uppercase;
+  color:rgba(75, 58, 58, 0.507) !important;
+}
+.navlink-right:hover {color:rgb(255, 0, 0) !important;}
+
+.sidebar-right-txcol {
+  padding: 0;
+  color: #ca0515;
+  font-weight: 500;
+}
+.liststyletype-none {
+  list-style-type: none;
+}
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Sections General
@@ -606,6 +747,31 @@ section {
   text-transform: uppercase;
   border-radius: 50px;
 }
+
+.newstoday-title {
+  display: flex;
+  justify-content:flex-start;
+  padding: 8px 20px;
+  color: #106eea;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  background: #e7f1fd;
+}
+.newstoday-text {
+  padding: 0px 10px 0px 5px;
+  opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
 
 .section-title h3 {
   margin: 15px 0 0 0;
@@ -670,6 +836,9 @@ section {
 }
 
 @media (max-width: 768px) {
+  .newstoday-center {
+    padding: 5px 15px;
+  }
   .breadcrumbs .d-flex {
     display: block !important;
   }
@@ -698,175 +867,6 @@ section {
   z-index: 1;
 }
 
-
-/* Zalo widget OA */
-.zalo-chat-widget-right {
-  right: 10px !important;
-  bottom: 88px !important;
-}
-/* end Zalo widget OA */
-
-/* ZALO_cá nhân  */
-
-@keyframes zoom {
-  0% {
-    transform: scale(.5);
-    opacity: 0
-  }
-
-  50% {
-    opacity: 1
-  }
-
-  to {
-    opacity: 0;
-    transform: scale(1)
-  }
-}
-
-@keyframes lucidgenzalo {
-  0% {
-    transform: rotate(-25deg)
-  }
-
-  50% {
-    transform: rotate(25deg)
-  }
-}
-
-
-
-.fcta-zalo-ben-trong-nut svg path {
-  fill: #fff
-}
-
-.fcta-zalo-vi-tri-nut {
-  position: fixed;
-  bottom: 35px;
-  right: 25px;
-  z-index: 999
-}
-
-.fcta-zalo-nen-nut,
-div.fcta-zalo-mess {
-  box-shadow: 0 1px 6px rgba(0, 0, 0, .06), 0 2px 32px rgba(0, 0, 0, .16)
-}
-
-.fcta-zalo-nen-nut {
-  width: 35px;
-  height: 35px;
-  text-align: center;
-  color: #fff;
-  background: #0068ff;
-  border-radius: 50%;
-  position: relative
-}
-
-.fcta-zalo-nen-nut::after,
-.fcta-zalo-nen-nut::before {
-  content: "";
-  position: absolute;
-  border: 1px solid #0068ff;
-  background: #0068ff80;
-  z-index: -1;
-  left: -25px;
-  right: -25px;
-  top: -25px;
-  bottom: -25px;
-  border-radius: 50%;
-  animation: zoom 1.9s linear infinite
-}
-
-.fcta-zalo-nen-nut::after {
-  animation-delay: .4s
-}
-
-.fcta-zalo-ben-trong-nut,
-.fcta-zalo-ben-trong-nut i {
-  transition: all 1s
-}
-
-.fcta-zalo-ben-trong-nut {
-  position: absolute;
-  text-align: center;
-  width: 60%;
-  height: 60%;
-  left: 10px;
-  bottom: 35px;
-  line-height: 70px;
-  font-size: 25px;
-  opacity: 1
-}
-
-.fcta-zalo-ben-trong-nut i {
-  animation: lucidgenzalo 1s linear infinite
-}
-
-.fcta-zalo-nen-nut:hover .fcta-zalo-ben-trong-nut,
-.fcta-zalo-text {
-  opacity: 0
-} 
-
-.fcta-zalo-nen-nut:hover i {
-  transform: scale(.5);
-  transition: all .5s ease-in
-}
-
-.fcta-zalo-text a {
-  text-decoration: none;
-  color: #fff
-}
-
-.fcta-zalo-text {
-  position: absolute;
-  font-size: 14px;
-  text-transform: uppercase ;
-  font-weight: 700;
-  transform: scaleX(-1);
-  transition: all .5s;
-  line-height: 1.4
-}
-
-.fcta-zalo-nen-nut:hover .fcta-zalo-text {
-  transform: scaleX(1);
-  opacity: 1
-}
-
-div.fcta-zalo-mess {
-  position: fixed;
-  bottom: 35px;
-  right: 60px;
-  z-index: 999;
-  background: #fff;
-  padding: 7px 25px 7px 15px;
-  color: #0068ff;
-  border-radius: 50px 0 0 50px;
-  font-weight: 700;
-  font-size: 15px
-}
-
-.fcta-zalo-mess span {
-  color: #0068ff !important
-}
-
-span#fcta-zalo-tracking {
-  font-family: Roboto;
-  line-height: 1.5
-}
-
-.fcta-zalo-text {
-  font-family: Roboto;
-}
-
-/* end ZALO_cá nhân */
-
- 
-.news-text {
-  color: #e7f1fd;
-  font-size: 20px;
-  font-style: italic;
-}
-
 .featured-services .bdshn_bgr {
   background-image: url(../img/BDSnew/1628966937.png);
 
@@ -885,184 +885,6 @@ span#fcta-zalo-tracking {
   background-image: url(../img/BDSnew/1629279898.png);
 }
 
-.back-to-top {
-  bottom:40px !important;
-  left: 20px !important;
-}
-/* ************************ NÚT GỌI ĐIỆN RUNG LẮC ******************* */
-
-.hotline-phone-ring-wrap {
-  position: fixed;
-  bottom: 0;
-  left: 50PX;
-  z-index: 999999;
-}
-.hotline-phone-ring {
-  position: relative;
-  top: -110px;
-  visibility: visible;
-  background-color: transparent;
-  cursor: pointer;
-  z-index: 11;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0);
-  transition: visibility .5s;
-  left: 0;
-  bottom: 0;
-  display: block;
-}
-.hotline-phone-ring-circle {
-	width: 85px;
-  height: 85px;
-  top: 10px;
-  left: 10px;
-  position: absolute;
-  background-color: #ef4e4ee3;
-  border-radius: 100%;
-  border: 2px solid #e60808;
-  -webkit-animation: phonering-alo-circle-anim 0.5s infinite ease-in-out;
-  animation: phonering-alo-circle-anim 0.5s infinite ease-in-out;
-  transition: all .5s;
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  opacity: 0.5;
-}
-.hotline-phone-ring-circle-fill {
-	width: 55px;
-  height: 55px;
-  top: 25px;
-  left: 25px;
-  position: absolute;
-  background-color: rgba(230, 8, 8, 0.7);
-  border-radius: 100%;
-  border: 2px solid transparent;
-  -webkit-animation: phonering-alo-circle-fill-anim 1.3s infinite ease-in-out;
-  animation: phonering-alo-circle-fill-anim 1.3s infinite ease-in-out;
-  transition: all .5s;
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-}
-.hotline-phone-ring-img-circle {
-	background-color: #e60808;
-	width: 35px;
-  height: 35px;
-  top: 37px;
-  left: 37px;
-  position: absolute;
-  background-size: 20px;
-  border-radius: 100%;
-  border: 2px solid transparent;
-  -webkit-animation: phonering-alo-circle-img-anim 0.7s infinite ease-in-out;
-  animation: phonering-alo-circle-img-anim 0.7s infinite ease-in-out;
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.hotline-phone-ring-img-circle .pps-btn-img {
-	display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-.hotline-phone-ring-img-circle .pps-btn-img img {
-	width: 25px;
-	height: 25px;
-}
-.hotline-bar {
-  position: absolute;
-  background: rgba(230, 8, 8, 0.8);
-  height: 40px;
-  width: 180px;
-  line-height: 40px;
-  border-radius: 3px;
-  padding: 0 10px;
-  background-size: 100%;
-  cursor: pointer;
-  transition: all 0.8s;
-  -webkit-transition: all 0.8s;
-  z-index: 9;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 50px !important;
-  /* width: 175px !important; */
-  left: 33px;
-  bottom: 37px;
-}
-.hotline-bar > a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: bold;
-  text-indent: 50px;
-  display: block;
-  letter-spacing: 1px;
-  line-height: 40px;
-  font-family: Arial;
-}
-.hotline-bar > a:hover,
-.hotline-bar > a:active {
-  color: #fff;
-}
-@-webkit-keyframes phonering-alo-circle-anim {
-  0% {
-    -webkit-transform: rotate(0) scale(0.5) skew(1deg);
-    -webkit-opacity: 0.1;
-  }
-  30% {
-    -webkit-transform: rotate(0) scale(0.7) skew(1deg);
-    -webkit-opacity: 0.5;
-  }
-  100% {
-    -webkit-transform: rotate(0) scale(1) skew(1deg);
-    -webkit-opacity: 0.1;
-  }}
-
-@-webkit-keyframes phonering-alo-circle-fill-anim {
-  0% {
-    -webkit-transform: rotate(0) scale(0.7) skew(1deg);
-    opacity: 0.6;
-  }
-  50% {
-    -webkit-transform: rotate(0) scale(1) skew(1deg);
-    opacity: 0.6;
-  }
-  100% {
-    -webkit-transform: rotate(0) scale(0.7) skew(1deg);
-    opacity: 0.6;
-  }
-}
-@-webkit-keyframes phonering-alo-circle-img-anim {
-  0% {
-    -webkit-transform: rotate(0) scale(1) skew(1deg);
-  }
-  10% {
-    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
-  }
-  20% {
-    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
-  }
-  30% {
-    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
-  }
-  40% {
-    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
-  }
-  50% {
-    -webkit-transform: rotate(0) scale(1) skew(1deg);
-  }
-  100% {
-    -webkit-transform: rotate(0) scale(1) skew(1deg);
-  }}
-
-/* **************** END NÚT GỌI ĐIỆN RUNG LẮC ******************* */
-/* **************** END NÚT GỌI ĐIỆN RUNG LẮC ******************* */
 /* @@@@@@@@@@@@ end Thêm nếm @@@@@@@@@@@@ */
 
 .featured-services .icon-box::before {
@@ -2165,4 +1987,322 @@ span#fcta-zalo-tracking {
     text-align: center;
     padding: 2px 0;
   }
+}
+/* ---------- end footer .copyright, #footer .credits ----- */
+
+
+
+/* <!-- zalo Business $$$$$$$$$$$$$$$$$$$$$$ --> */
+/* Zalo widget OA */
+.zalo-chat-widget-right {
+  right: 10px !important;
+  bottom: 88px !important;
+}
+/* end Zalo widget OA */
+
+/* <!-- Zalo cá nhân ##################### --> */
+/* ZALO_cá nhân  */
+
+@keyframes zoom {
+  0% {
+    transform: scale(.5);
+    opacity: 0
+  }
+  50% {
+    opacity: 1
+  }
+  to {
+    opacity: 0;
+    transform: scale(1)
+  }
+}
+@keyframes lucidgenzalo {
+  0% {
+    transform: rotate(-25deg)
+  }
+
+  50% {
+    transform: rotate(25deg)
+  }
+}
+.fcta-zalo-ben-trong-nut svg path {
+  fill: #fff
+}
+.fcta-zalo-vi-tri-nut {
+  position: fixed;
+  bottom: 35px;
+  right: 25px;
+  z-index: 999
+}
+.fcta-zalo-nen-nut,
+div.fcta-zalo-mess {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .06), 0 2px 32px rgba(0, 0, 0, .16)
+}
+.fcta-zalo-nen-nut {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  color: #fff;
+  background: #0068ff;
+  border-radius: 50%;
+  position: relative
+}
+.fcta-zalo-nen-nut::after,
+.fcta-zalo-nen-nut::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #0068ff;
+  background: #0068ff80;
+  z-index: -1;
+  left: -25px;
+  right: -25px;
+  top: -25px;
+  bottom: -25px;
+  border-radius: 50%;
+  animation: zoom 1.9s linear infinite
+}
+.fcta-zalo-nen-nut::after {
+  animation-delay: .4s
+}
+.fcta-zalo-ben-trong-nut,
+.fcta-zalo-ben-trong-nut i {
+  transition: all 1s
+}
+.fcta-zalo-ben-trong-nut {
+  position: absolute;
+  text-align: center;
+  width: 65%;
+  left: 6px;
+  top: -20px;
+  line-height: 70px;}
+
+.fcta-zalo-ben-trong-nut i {
+  animation: lucidgenzalo 1s linear infinite
+}
+.fcta-zalo-nen-nut:hover .fcta-zalo-ben-trong-nut,
+.fcta-zalo-text {
+  opacity: 0
+} 
+.fcta-zalo-nen-nut:hover i {
+  transform: scale(.5);
+  transition: all .5s ease-in
+}
+.fcta-zalo-text a {
+  text-decoration: none;
+  color: #fff
+}
+.fcta-zalo-text {
+  position: absolute;
+  font-size: 14px;
+  text-transform: uppercase ;
+  font-weight: 700;
+  transform: scaleX(-1);
+  transition: all .5s;
+  line-height: 1.4
+}
+.fcta-zalo-nen-nut:hover .fcta-zalo-text {
+  transform: scaleX(1);
+  opacity: 1
+}
+div.fcta-zalo-mess {
+  position: fixed;
+  bottom: 35px;
+  right: 60px;
+  z-index: 999;
+  background: #fff;
+  padding: 7px 25px 7px 15px;
+  color: #0068ff;
+  border-radius: 50px 0 0 50px;
+  font-weight: 700;
+  font-size: 15px
+}
+.fcta-zalo-mess span {
+  color: #0068ff !important
+}
+span#fcta-zalo-tracking {
+  font-family: Roboto;
+  line-height: 1.5
+}
+.fcta-zalo-text {
+  font-family: Roboto;
+}
+/* end ZALO_cá nhân */
+
+
+/* ************************ NÚT GỌI ĐIỆN RUNG LẮC ******************* */
+
+.hotline-phone-ring-wrap {
+  position: fixed;
+  bottom: 0;
+  left: 50PX;
+  z-index: 999999;
+}
+.hotline-phone-ring {
+  position: relative;
+  top: -110px;
+  visibility: visible;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 11;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transition: visibility .5s;
+  left: 0;
+  bottom: 0;
+  display: block;
+}
+.hotline-phone-ring-circle {
+	width: 85px;
+  height: 85px;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  background-color: #ef4e4ee3;
+  border-radius: 100%;
+  border: 2px solid #e60808;
+  -webkit-animation: phonering-alo-circle-anim 0.5s infinite ease-in-out;
+  animation: phonering-alo-circle-anim 0.5s infinite ease-in-out;
+  transition: all .5s;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  opacity: 0.5;
+}
+.hotline-phone-ring-circle-fill {
+	width: 55px;
+  height: 55px;
+  top: 25px;
+  left: 25px;
+  position: absolute;
+  background-color: rgba(230, 8, 8, 0.7);
+  border-radius: 100%;
+  border: 2px solid transparent;
+  -webkit-animation: phonering-alo-circle-fill-anim 1.3s infinite ease-in-out;
+  animation: phonering-alo-circle-fill-anim 1.3s infinite ease-in-out;
+  transition: all .5s;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.hotline-phone-ring-img-circle {
+	background-color: #e60808;
+	width: 35px;
+  height: 35px;
+  top: 37px;
+  left: 37px;
+  position: absolute;
+  background-size: 20px;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  -webkit-animation: phonering-alo-circle-img-anim 0.7s infinite ease-in-out;
+  animation: phonering-alo-circle-img-anim 0.7s infinite ease-in-out;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hotline-phone-ring-img-circle .pps-btn-img {
+	display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.hotline-phone-ring-img-circle .pps-btn-img img {
+	width: 25px;
+	height: 25px;
+}
+.hotline-bar {
+  position: absolute;
+  background: rgba(230, 8, 8, 0.8);
+  height: 40px;
+  width: 180px;
+  line-height: 40px;
+  border-radius: 3px;
+  padding: 0 10px;
+  background-size: 100%;
+  cursor: pointer;
+  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  z-index: 9;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 50px !important;
+  left: 33px;
+  bottom: 37px;
+}
+.hotline-bar > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  text-indent: 50px;
+  display: block;
+  letter-spacing: 1px;
+  line-height: 40px;
+  font-family: Arial;
+}
+.hotline-bar > a:hover,
+.hotline-bar > a:active {
+  color: #fff;
+}
+@-webkit-keyframes phonering-alo-circle-anim {
+  0% {
+    -webkit-transform: rotate(0) scale(0.5) skew(1deg);
+    -webkit-opacity: 0.1;
+  }
+  30% {
+    -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+    -webkit-opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    -webkit-opacity: 0.1;
+  }}
+
+@-webkit-keyframes phonering-alo-circle-fill-anim {
+  0% {
+    -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+    opacity: 0.6;
+  }
+  50% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+    opacity: 0.6;
+  }
+}
+@-webkit-keyframes phonering-alo-circle-img-anim {
+  0% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+  }
+  10% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  30% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  40% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  50% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+  }}
+/* @@@@@@@@@ End thánh rung lắc @@@@@@@@@@@  */
+
+/* <!-- Trở về bên em !!!!!!!!!!!!!!!!!!!!! --> */
+.back-to-top {
+  bottom:38px !important;
+  left: 20px !important;
 }

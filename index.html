@@ -25,6 +25,7 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -40,6 +41,7 @@
 <body>
 
   <!-- ======= Top Bar ======= -->
+
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
@@ -57,6 +59,7 @@
   </section>
 
   <!-- ======= Header ======= -->
+
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
@@ -67,7 +70,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#topbar">Trang Chủ</a></li>
-          <li><a class="nav-link scrollto" href="#Newstoday">News today</a></li>
+          <li><a class="nav-link scrollto" href="#newstitle">News today</a></li>
           <li><a class="nav-link scrollto" href="#about">Giới Thiệu</a></li>
           <li class="dropdown"><a href="#"><span>Sản Phẩm</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -97,6 +100,7 @@
     </div>
   </header><!-- End Header -->
 
+
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
@@ -115,83 +119,269 @@
 
   <main id="main">
     <section id="newstitle" class="d-flex align-items-center">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="contact-info d-flex align-items-center">
-          <span class="news-text">Chào mừng Quý khách hàng đến với Bất động sản Hà Nội!</span>
+      <div class="news-titles d-flex justify-content-center justify-content-md-between">
+        <div class=" container contact-info d-flex align-items-center">
+          <span class="news-text">Bất động sản Hà Nội Kính chào Quý khách!</span>
         </div>
       </div>
     </section>
-
     <section id="Newstoday" class="services">
       <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h6>Tin Tức Thời Sự <span>Bản tin trong ngày</span></h6>
-          <h6>Tin Tức Thời Sự <span>Bản tin trong ngày</span></h6>
+        <div class="section-title newstoday-title">
+          <font color="#ff0018">*</font>
+          <a class="newstoday-text" href="#">Bản tin trong ngày</a>
+          <font color="#ff0018">*</font>
+          <a class="newstoday-text" href="#">Đại dịch CoVis19</a>
+          <font color="#ff0018">*</font>
+          <a class="newstoday-text" href="#">Người tốt việc tốt</a>
         </div>
 
-        <div class="row">
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
+        <div class="row newstoday-content">
+          <div class="newstoday-sidebar col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in"
+            data-aos-delay="100">
+            <ul class="list_newstoday">
+              <li class="nav-link news-item scrollto active">
+                <a href="#" class="thumbblock-img"><img
+                    alt="Phó Bí thư Thường trực Thành ủy Nguyễn Thị Tuyến: Thực hiện nghiêm phác đồ điều trị với bệnh nhân F0"
+                    src="./assets/img/thanh_tri1.jpg"></a>
+                <h6><a href="#" class="thumbblock-text">Phó Bí thư Thường trực Thành ủy Nguyễn Thị Tuyến: Thực hiện
+                    nghiêm
+                    phác đồ điều trị với bệnh nhân F0</a></h6>
+              </li>
+              <li class="nav-link news-item scrollto active">
+                <a href="#" class="thumbblock-img"><img
+                    alt="Phó Bí thư Thường trực Thành ủy Nguyễn Thị Tuyến: Thực hiện nghiêm phác đồ điều trị với bệnh nhân F0"
+                    src="./assets/img/quyhoachvetinh.jpg"></a>
+                <h6><a href="#" class="thumbblock-text">Phát triển chuỗi đô thị vệ tinh ở Hà Nội: Động lực cho phát
+                    triển kinh tế và đô thị Thủ đô</a></h6>
+              </li>
+              <li class="nav-link news-item scrollto active">
+                <a href="#" class="thumbblock-img"><img
+                    alt="Phó Bí thư Thường trực Thành ủy Nguyễn Thị Tuyến: Thực hiện nghiêm phác đồ điều trị với bệnh nhân F0"
+                    src="./assets/img/t8.jpg"></a>
+                <h6><a href="#" class="thumbblock-text">Hà Nội: Siết chặt phòng chống dịch Covid-19 trong dịp nghỉ Lễ
+                    Quốc khánh 2/9</a></h6>
+              </li>
+              <li class="nav-link news-item scrollto active">
+                <a href="#" class="thumbblock-img"><img
+                    alt="Phó Bí thư Thường trực Thành ủy Nguyễn Thị Tuyến: Thực hiện nghiêm phác đồ điều trị với bệnh nhân F0"
+                    src="./assets/img/pho-tong-thong-my-harris.jpeg"></a>
+                <h6><a href="#" class="thumbblock-text">Phó Tổng thống Mỹ Kamala Harris lên đường thăm Singapore và Việt
+                    Nam</a></h6>
+              </li>
+            </ul>
           </div>
-
-          <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
+          <div class="newstoday-center col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
             data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Sed ut perspiciatis</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esseuis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum doluis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                doluis aute irure dolor in reprehenderit in voluptate velit esse cillum doluis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dol cillum dolore</p>
+            <div class="col420">
+              <div class="pkg">
+                <a href="/chu-tich-ubnd-tp" class="newstoday-center-img"><img
+                    alt="Chủ tịch UBND TP Hà Nội ban hành công điện 19, Hà Nội tiếp tục cách ly toàn xã hội đến 6 giờ ngày 6/9"
+                    src="./assets/img/pho_ta_hien_2.jpg"></a>
+                <h5><a href="#" class="nav-link thumbblock-text newstoday-content-center">Chủ tịch UBND TP Hà Nội ban
+                    hành
+                    công điện 19, Hà Nội tiếp tục
+                    cách ly toàn xã hội đến 6 giờ ngày 6/9</a></h5>
+                <div class="sapo_news thumbblock-text">Ngày 21/8, UBND TP Hà Nội ban hành Công điện số
+                  19/CĐ-UBND về việc
+                  tăng cường các biện pháp thực hiện nghiêm giãn cách xã hội để ngăn chặn dịch bệnh Covid-19.<br />
+                  Trong 28 ngày thực hiện giãn cách xã hội, với tinh thần vào cuộc quyết liệt kịp thời của cả hệ thống
+                  chính trị, chính quyền các cấp từ Thành phố đến cơ sở cùng với sự đồng lòng, chung sức của cộng đồng
+                  xã hội và Nhân dân Thủ đô, tình hình dịch bệnh trên địa bàn Thành phố vẫn đang được kiểm soát.Tuy vậy,
+                  bên cạnh kết quả đã đạt được vẫn còn những tồn tại, nguy cơ, thách thức đặt ra: Khi lượng người ra
+                  đường vẫn đông, nhiều trường hợp vi phạm đã bị xử lý; Thành phố liên tiếp ghi nhận những ca nhiễm mới
+                  trong cộng đồng tại các khu vực có mật độ dân cư đông, địa bàn phức tạp, các cơ sở sản xuất, cung cấp
+                  dịch vụ thiết yếu đang hoạt động đan xen tại khu vực.Qua công tác xét nghiệm diện rộng, Thành phố đã
+                  xác định được một số địa bàn và đối tượng nguy cơ rất cao (vùng đỏ và nhóm đỏ), tiềm ẩn rủi ro và nguy
+                  cơ lớn có thể hình thành những ổ dịch phức tạp, khó kiểm soát. Bên cạnh đó, tại các tỉnh phía Nam dịch
+                  bệnh đang lây lan mạnh trong cộng đồng, một số tỉnh lân cận dịch bệnh đang có dấu hiệu bùng phát trở
+                  lại.
+
+                  Thực hiện kết luận, chỉ đạo của Trung ương và thông báo kết luận số 468-TB/TU ngày 19/8/2021 của Ban
+                  Thường vụ Thành ủy về tăng cường phòng, chống dịch Covid-19 trên địa bàn Thành phố; Chủ tịch UBND
+                  Thành phố yêu cầu Giám đốc, Thủ trưởng các Sở, ban, ngành Thành phố và Chủ tịch UBND các quận, huyện,
+                  thị xã và đề nghị các cơ quan, đơn vị, đoàn thể, tổ chức, doanh nghiệp và người dân trên địa bàn Thành
+                  phố thực hiện nghiêm một số nội dung như sau:
+                  1. Tiếp tục thực hiện cách ly toàn xã hội đến 06h giờ 00 ngày 06 tháng 9 năm 2021 trên phạm vi toàn
+                  Thành phố để phòng, chống dịch Covid-19.
+                  2. Yêu cầu người dân, các cơ quan, tổ chức, đơn vị, doanh nghiệp tiếp tục thực hiện nghiêm các quy
+                  định giãn cách xã hội để phòng chống dịch tại Chỉ thị số 17/CT-UBND ngày 23/7/2021 của Chủ tịch UBND
+                  Thành phố theo nguyên tắc người cách ly với người, gia đình cách ly với gia đình, khu phố cách ly với
+                  khu phố; thôn xóm cách ly với thôn xóm; xã, phường cách ly với xã, phường; quận, huyện cách ly với
+                  quận, huyện; Thành phố cách ly với tỉnh; kiên quyết yêu cầu người dân “ai ở đâu thì ở đó” nhằm khống
+                  chế sự lây lan, bóc tách F0 ra khỏi cộng đồng và kiểm soát tốt tình hình dịch bệnh trong thời gian
+                  giãn cách xã hội.
+                  Đây là thời điểm then chốt, quyết định đến hiệu quả công tác phòng chống dịch, mỗi người dân Thủ đô là
+                  một chiến sĩ, mỗi gia đình, tổ dân phố, thôn, xóm, cơ quan, doanh nghiệp … là một pháo đài chống dịch.
+
+                  Chỉ một hành động chủ quan, lơ là, mất cảnh giác trong lúc này sẽ ảnh hưởng đến công tác phòng chống
+                  dịch, có thể phải kéo dài thời gian giãn cách xã hội, ảnh hưởng đến kinh tế xã hội, an ninh trật tự
+                  của Thành phố và sinh kế, sức khỏe, tính mạng của người dân và cộng đồng. Đề nghị mọi người dân và tổ
+                  chức, doanh nghiệp chấp hành nghiêm; tham gia đồng hành thực hiện hiệu quả các nhiệm vụ phòng chống
+                  dịch của Thành phố.
+
+                  3. Yêu cầu các cơ quan, đơn vị của Trung ương và Thành phố; các tổ chức, doanh nghiệp đóng trên địa
+                  bàn chấp hành nghiêm quy định giãn cách xã hội; siết chặt việc cấp và quản lý giấy đi đường cho cán bộ
+                  công chức, viên chức, người lao động của đơn vị, đảm bảo đúng đối tượng và quy định của Thành phố;
+                  chịu trách nhiệm trước chính quyền Thành phố và pháp luật trong trường hợp vi phạm quy định nêu trên
+                  gây lây lan dịch bệnh trong cộng đồng.
+
+                  4. Căn cứ diễn biến dịch bệnh trên địa bàn, Chủ tịch UBND các quận, huyện, thị xã chủ động đánh giá
+                  tình hình và có thể quyết định các biện pháp cao hơn phù hợp thực tiễn của từng địa phương để kịp thời
+                  ngăn chặn, bóc tách nguồn lây trong thời gian ngắn nhất; đồng thời phải đảm bảo việc cung ứng đầy đủ
+                  các nhu yếu phẩm thiết yếu, nhu cầu khám chữa bệnh của người dân.
+
+                  Tiếp tục huy động sự tham gia hiệu quả của cả hệ thống chính trị, nhất là hệ thống chính trị ở cơ sở;
+                  đồng thời kêu gọi mọi người dân, tổ chức, doanh nghiệp cùng chia sẻ, đồng hành, nỗ lực vượt qua khó
+                  khăn, tích cực hưởng ứng, tham gia phòng chống dịch vì sức khỏe của chính mình, gia đình và cộng đồng;
+                  huy động mọi nguồn lực của xã hội cho công tác phòng, chống dịch để sớm chiến thắng dịch bệnh, đảm bảo
+                  an toàn, bền vững cho Thủ đô, đất nước.
+
+                  Siết chặt công tác quản lý phòng chống dịch tại các chợ đầu mối, chợ dân sinh, trung tâm thương mại,
+                  siêu thị, cửa hàng tiện ích…nhất là trong dịp nghỉ Lễ Quốc khánh 2/9, ngày cuối tuần.
+                  Tổ chức kiểm tra, giám sát chặt chẽ di biến động của người dân, các cơ quan, đơn vị, doanh nghiệp hoạt
+                  động trên địa bàn gồm hoạt động tham gia giao thông, hoạt động của các cơ quan, công sở, sản xuất,
+                  kinh doanh, cung ứng hàng hóa, dịch vụ thiết yếu; đảm bảo an toàn phòng chống dịch và chỉ được hoạt
+                  động trong các khung giờ quy định; tuân thủ việc khai báo bằng mã QR Code, quy định phòng chống dịch
+                  của Thành phố; xử lý nghiêm đối với các trường hợp vi phạm.
+
+                  5. Đề nghị Ủy ban MTTQ Việt Nam thành phố Hà Nội đẩy mạnh tuyên truyền, vận động các tầng lớp Nhân dân
+                  thực hiện nghiêm các quy định giãn cách xã hội; huy động các cấp, các ngành, các đoàn thể chính trị xã
+                  hội Thành phố, cộng đồng doanh nghiệp và Nhân dân tích cực tham gia công tác đảm bảo an sinh xã hội;
+                  là đầu mối chủ trì và điều phối các hoạt động an sinh xã hội theo chủ trương của Thành phố đảm bảo kịp
+                  thời, hiệu quả, an toàn; công bố đường dây nóng để tiếp nhận và xử lý kịp thời những kiến nghị của
+                  người dân; giám sát thực hiện các chính sách hỗ trợ, an sinh xã hội; chăm lo, chia sẻ những khó khăn,
+                  đặc biệt là đối với những người lao động bị ảnh hưởng bởi đại dịch Covid-19, đảm bảo không để người
+                  dân nào bị thiếu ăn, thiếu mặc, bị bỏ lại phía sau.
+                  Giao Sở Lao động - Thương binh và Xã hội phối hợp UBND các quận, huyện, thị xã đẩy nhanh việc triển
+                  khai các chính sách an sinh xã hội theo Nghị quyết 68/NQ-CP của Chính phủ, Quyết định số
+                  23/2021/QĐ-TTg của Thủ tướng Chính phủ, Quyết định 3642/QĐ-UBND ngày 21/7/2021 của UBND Thành phố và
+                  các Nghị quyết của HĐND Thành phố để kịp thời hỗ trợ Nhân dân gặp khó khăn do đại dịch Covid-19 trên
+                  địa bàn; kiểm tra đôn đốc thực hiện các chính sách hỗ trợ của Thành phố tại các địa phương; tiếp tục
+                  rà soát, cắt giảm các thủ tục tạo thuận lợi cho người dân; đề xuất bổ sung kịp thời các chính sách phù
+                  hợp đảm bảo tốt công tác an sinh xã hội.
+                  6. Trong thời gian giãn cách xã hội, đã có rất nhiều hành động đẹp, ý nghĩa của các cơ quan, doanh
+                  nghiệp, tổ chức, cá nhân cùng chia sẻ, chung tay góp sức trong công tác phòng chống dịch bệnh của
+                  Thành phố. Đề nghị Ban Tuyên giáo Thành ủy và Sở Thông tin và Truyền thông phối hợp các cơ quan báo
+                  chí Trung ương và Thành phố tăng cường thông tin, tuyên truyền để nhân rộng các mô hình, lan tỏa các
+                  hành động đẹp, nhân văn, tạo sự đồng thuận, đoàn kết, quyết tâm chiến thắng dịch bệnh.
+                  Sở Thông tin và Truyền thông phối hợp Công an Thành phố xử lý nghiêm các đối tượng đăng tải, chia sẻ
+                  thông tin sai sự thật về công tác chỉ đạo điều hành và tình hình dịch bệnh; tổ chức vận hành hiệu quả
+                  Tổng đài 1022 tiếp nhận, giải đáp các kiến nghị và phản ánh, tư vấn liên quan trong công tác phòng,
+                  chống dịch theo khung thời gian 24/7 và chuyển các cơ quan đơn vị kịp thời xử lý.
+                  7. Giao Sở Y tế chuẩn bị sẵn sàng các phương án cao để tránh bị động, bất ngờ trong mọi tình huống
+                  Chỉ đạo tổ chức truy vết bảo đảm không để sót đối tượng nguy cơ cao (F1) theo đặc thù dịch tễ của biến
+                  chủng mới.
+                  Nâng cao năng lực xét nghiệm, tổ chức xét nghiệm diện rộng và xét nghiệm theo kế hoạch đảm bảo an
+                  toàn, chính xác và trả mẫu trong 12 giờ với các đối tượng nguy cơ cao (F1) và trong 24 giờ với các mẫu
+                  còn lại.
+                  Đảm bảo khả năng thu dung điều trị 30.000 F0; triển khai phương án đáp ứng điều trị y tế gồm: Nhân lực
+                  y tế, oxy y tế, các trang thiết bị, vật tư y tế cần thiết... Tổ chức các tầng điều trị phù hợp, hiệu
+                  quả để giảm thiểu các trường hợp chuyển nặng và tử vong. Bố trí năng lực phù hợp với điều kiện của
+                  từng khu vực, từng tầng điều trị đảm bảo khả năng chống dịch lâu dài.
+                  Tiếp tục nâng cao năng lực các dây chuyền tiêm với sự tham gia của các bệnh viện Trung ương và y tế tư
+                  nhân; sẵn sàng tổ chức tiêm quy mô lớn, đảm bảo an toàn ngay khi tiếp nhận thêm vắc xin. Hướng dẫn
+                  UBND các quận, huyện, thị xã tổ chức tiêm vắc xin nhanh, an toàn, hiệu quả. Phối hợp với Sở Thông tin
+                  và truyền thông hướng dẫn người dân sử dụng phần mềm tiêm chủng, chủ động chuẩn bị, khai báo các thông
+                  tin đầy đủ trước khi đi tiêm.
+                  8. Giao Công an Thành phố: Tổ chức triển khai kịp thời các giải pháp tăng cường kiểm tra, giám sát
+                  chặt chẽ việc chấp hành của người dân khi ra đường và các phương tiện tham gia giao thông; việc cấp
+                  giấy đi đường của các cơ quan, doanh nghiệp, tổ chức trên địa bàn; xử lý nghiêm đối với các trường hợp
+                  vi phạm không đúng quy định.
+                  Đảm bảo công tác phòng chống cháy nổ tại khu vực thu dung, điều trị, các khu cách ly tập trung của
+                  Thành phố. Chủ động triển khai các biện pháp phòng chống tội phạm và đảm bảo an ninh trật tự trên địa
+                  bàn.
+
+                  9. Giao Bộ Tư lệnh Thủ đô phối hợp Ủy ban MTTQ Việt Nam thành phố Hà Nội, các địa phương làm tốt công
+                  tác an sinh xã hội và sẵn sàng tham gia hỗ trợ người dân tại các địa phương trong sinh hoạt, công tác
+                  thu hoạch mùa màng…; phối hợp UBND các quận, huyện, thị xã nâng công suất, khả năng cách ly tập trung
+                  đáp ứng 70.000 chỗ cho đối tượng F1; kiểm soát chặt chẽ các khu cách ly tập trung của Thành phố và tại
+                  các quận, huyện, thị xã đảm bảo hạn chế tối đa việc lây nhiễm chéo trong cơ sở cách ly và từ cơ sở
+                  cách ly ra ngoài cộng đồng.
+                  10. Giao Sở Giáo dục và Đào tạo tổ chức Lễ khai giảng truyền hình, phát thanh trực tiếp trên Đài Phát
+                  thanh và Truyền hình Hà Nội tạo không khí phấn khởi cho giáo viên, học sinh; triển khai công tác giảng
+                  dạy năm học mới 2021 - 2022 theo quy định của Bộ Giáo dục và Đào tạo, Kế hoạch của UBND Thành phố đảm
+                  bảo an toàn, phù hợp tình hình diễn biến dịch bệnh và điều kiện thực tiễn của các địa phương và Thành
+                  phố.
+                  11. Yêu cầu chính quyền các cấp, các ngành chủ động phương án tổ chức thực hiện để bảo đảm không để
+                  đứt gãy chuỗi cung ứng hàng hóa, mất ổn định thị trường, thực hiện tốt các biện pháp bình ổn giá,
+                  không để xảy ra tình trạng khan hàng, sốt giá, đầu cơ găm hàng, hàng giả, hàng kém chất lượng, gây
+                  hoang mang trong dư luận;
+                  Đảm bảo an toàn lưu thông và cung ứng lương thực, thực phẩm, nhu yếu phẩm thiết yếu cho mọi người dân,
+                  đặc biệt các khu vực cách ly, phong tỏa, bảo đảm không để bất kỳ ai bị thiếu ăn, thiếu mặc; triển khai
+                  hiệu quả các chương trình, kế hoạch của Thành phố về xét nghiệm, tiêm chủng, cách ly, thu dung, điều
+                  trị; quan tâm, hỗ trợ các điều kiện về tinh thần và vật chất cho lực lượng tuyến đầu đồng thời đáp ứng
+                  nhu cầu chăm sóc y tế, sức khỏe, tinh thần cho người dân ở mọi lúc, mọi nơi khi cần thiết, đảm bảo
+                  công tác an sinh xã hội, an ninh, trật tự trên địa bàn.
+
+                  Các doanh nghiệp sản xuất kinh doanh dịch vụ thiết yếu tổ chức hoạt động sản xuất phải tuyệt đối an
+                  toàn, phù hợp với tình hình diễn biến dịch trên địa bàn theo phương án được cấp thẩm quyền phê duyệt.
+
+                  Yêu cầu Giám đốc, Thủ trưởng các Sở, ban, ngành Thành phố, Chủ tịch UBND các quận, huyện, thị xã; đề
+                  nghị cơ quan, đơn vị, đoàn thể, tổ chức trên địa bàn Thành phố và Nhân dân nghiêm túc thực hiện nội
+                  dung Công điện này.
+                </div>
+              </div>
             </div>
           </div>
-
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
             data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proidensint occaecat cupidatat non proident, sunt in culpa qui
-                officia</p>
+            <div id="tabs_news .newstoday-sidebar" class="box_tab newstoday-sb-right-bgr">
+              <ul class="navbar liststyletype-none navbar-right">
+                <li><a class="nav-link navlink-right scrollto active " href="#topbar">Đọc nhiều</a></li>
+                <li><a class="nav-link navlink-right scrollto" href="#newstitle">Tin mới</a></li>
+              </ul>
+              <div id="tab-1" class="content_tab " style="display: block;">
+                <ul class="list_news180 news-item right-list">
+                  <li class="nav-link news-item scrollto active">
+                    <h6><a href="#" class="sidebar-right-txcol thumbblock-text">Hà Nội kịp thời hỗ trợ gần 528 tỷ đồng
+                        cho người dân bị ảnh hưởng Covid-19</a></h6>
+                  </li>
+                  <li class="nav-link news-item scrollto active">
+                    <h6><a href="#" class="sidebar-right-txcol thumbblock-text">Hà Nội: Yêu cầu kiểm tra, giám sát chặt
+                        chẽ việc cấp giấy đi đường của các cơ quan, doanh nghiệp</a></h6>
+                  </li>
+                  <li class="nav-link news-item scrollto active">
+                    <h6><a href="#" class="sidebar-right-txcol thumbblock-text">Chủ tịch UBND TP Hà Nội ban hành công
+                        điện 19, Hà Nội tiếp tục cách ly toàn xã hội đến 6 giờ ngày 6/9</a></h6>
+                  </li>
+                  <li class="nav-link news-item scrollto active">
+                    <h6><a href="#" class="sidebar-right-txcol thumbblock-text">Pfizer sẽ đẩy nhanh tiến độ giao
+                        vaccine, sẵn sàng hợp tác về thuốc điều trị Covid-19 với Việt Nam
+                        21-08-2021 07:41</a></h6>
+                  </li>
+                  <li class="nav-link news-item scrollto active">
+                    <h6><a href="#" class="sidebar-right-txcol thumbblock-text">Đầu tư thời Covid-19: Sẵn tiền nhàn rỗi
+                        có nên mua bất động sản chờ tăng giá?</a></h6>
+                  </li>
+                  <li class="nav-link news-item scrollto active">
+                    <h6><a href="#" class="sidebar-right-txcol thumbblock-text">Sunshine Homes chiếm trọn làn sóng bất
+                        động sản hạng sang Tây Hồ Tây với 600 villas đẳng cấp</a></h6>
+                  </li>
+                  <li class="nav-link news-item scrollto active">
+                    <h6><a href="#" class="sidebar-right-txcol thumbblock-text">Hướng phong thủy nhà chung cư là hướng
+                        cửa hay hướng ban công? </a></h6>
+                  </li>
+                  <li class="nav-link news-item scrollto active">
+                    <h6><a href="#" class="sidebar-right-txcol thumbblock-text">Tăng tốc giải ngân đầu tư công, thị
+                        trường bất động sản hưởng lợi
+                      </a></h6>
+                  </li>
+                  <li class="nav-link news-item scrollto active">
+                    <h6><a href="#" class="sidebar-right-txcol thumbblock-text">Giải pháp nào để sàn giao dịch vượt khó
+                        trong đại dịch Covid-19?</a></h6>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-slideshow"></i></div>
-              <h4><a href="">Dele cardo</a></h4>
-              <p>Quis consequatur saepe eligendi voluptatem consequatur de eligendi voluptatem consequatur de eligendi
-                voluptatem consequatur de eligendi voluptatem consequatur de eligendi voluptatem consequatur de eligendi
-                voluptatem consequatur de eligendi voluptatem consequatur de eligendi voluptatem consequatur de eligendi
-                voluptatem consequatur dolor consequuntur</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-arch"></i></div>
-              <h4><a href="">Divera don</a></h4>
-              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-            </div>
-          </div>
-
         </div>
-
       </div>
     </section>
+
+
+
+
 
     <!-- ======= Featured Services Section ======= -->
     <section id="featured-services" class="featured-services">
@@ -892,59 +1082,6 @@
       </div>
     </section><!-- End Pricing Section -->
 
-
-
-    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!ZALO cá nhân !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!ZALO cá nhân !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-    <a href="https://chat.zalo.me/?phone=0979351075" id="linkzalo" target="_blank" rel="noopener noreferrer">
-      <div id="fcta-zalo-tracking" class="fcta-zalo-mess mobile-dpn">
-        <span id="fcta-zalo-tracking">Chat hỗ trợ</span>
-      </div>
-      <div class="fcta-zalo-vi-tri-nut">
-        <div id="fcta-zalo-tracking" class="fcta-zalo-nen-nut">
-          <div id="fcta-zalo-tracking" class="fcta-zalo-ben-trong-nut"> <svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 460.1 436.6">
-              <path fill="currentColor" class="st0"
-                d="M82.6 380.9c-1.8-.8-3.1-1.7-1-3.5 1.3-1 2.7-1.9 4.1-2.8 13.1-8.5 25.4-17.8 33.5-31.5 6.8-11.4 5.7-18.1-2.8-26.5C69 269.2 48.2 212.5 58.6 145.5 64.5 107.7 81.8 75 107 46.6c15.2-17.2 33.3-31.1 53.1-42.7 1.2-.7 2.9-.9 3.1-2.7-.4-1-1.1-.7-1.7-.7-33.7 0-67.4-.7-101 .2C28.3 1.7.5 26.6.6 62.3c.2 104.3 0 208.6 0 313 0 32.4 24.7 59.5 57 60.7 27.3 1.1 54.6.2 82 .1 2 .1 4 .2 6 .2H290c36 0 72 .2 108 0 33.4 0 60.5-27 60.5-60.3v-.6-58.5c0-1.4.5-2.9-.4-4.4-1.8.1-2.5 1.6-3.5 2.6-19.4 19.5-42.3 35.2-67.4 46.3-61.5 27.1-124.1 29-187.6 7.2-5.5-2-11.5-2.2-17.2-.8-8.4 2.1-16.7 4.6-25 7.1-24.4 7.6-49.3 11-74.8 6zm72.5-168.5c1.7-2.2 2.6-3.5 3.6-4.8 13.1-16.6 26.2-33.2 39.3-49.9 3.8-4.8 7.6-9.7 10-15.5 2.8-6.6-.2-12.8-7-15.2-3-.9-6.2-1.3-9.4-1.1-17.8-.1-35.7-.1-53.5 0-2.5 0-5 .3-7.4.9-5.6 1.4-9 7.1-7.6 12.8 1 3.8 4 6.8 7.8 7.7 2.4.6 4.9.9 7.4.8 10.8.1 21.7 0 32.5.1 1.2 0 2.7-.8 3.6 1-.9 1.2-1.8 2.4-2.7 3.5-15.5 19.6-30.9 39.3-46.4 58.9-3.8 4.9-5.8 10.3-3 16.3s8.5 7.1 14.3 7.5c4.6.3 9.3.1 14 .1 16.2 0 32.3.1 48.5-.1 8.6-.1 13.2-5.3 12.3-13.3-.7-6.3-5-9.6-13-9.7-14.1-.1-28.2 0-43.3 0zm116-52.6c-12.5-10.9-26.3-11.6-39.8-3.6-16.4 9.6-22.4 25.3-20.4 43.5 1.9 17 9.3 30.9 27.1 36.6 11.1 3.6 21.4 2.3 30.5-5.1 2.4-1.9 3.1-1.5 4.8.6 3.3 4.2 9 5.8 14 3.9 5-1.5 8.3-6.1 8.3-11.3.1-20 .2-40 0-60-.1-8-7.6-13.1-15.4-11.5-4.3.9-6.7 3.8-9.1 6.9zm69.3 37.1c-.4 25 20.3 43.9 46.3 41.3 23.9-2.4 39.4-20.3 38.6-45.6-.8-25-19.4-42.1-44.9-41.3-23.9.7-40.8 19.9-40 45.6zm-8.8-19.9c0-15.7.1-31.3 0-47 0-8-5.1-13-12.7-12.9-7.4.1-12.3 5.1-12.4 12.8-.1 4.7 0 9.3 0 14v79.5c0 6.2 3.8 11.6 8.8 12.9 6.9 1.9 14-2.2 15.8-9.1.3-1.2.5-2.4.4-3.7.2-15.5.1-31 .1-46.5z">
-              </path>
-            </svg></div>
-          <div id="fcta-zalo-tracking" class="fcta-zalo-text">Chat ngay</div>
-        </div>
-      </div>
-    </a>
-    <script>
-      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        document.getElementById("linkzalo").href = "https://zalo.me/0979351075";
-      }
-    </script>
-
-    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!END ZALO cá nhân !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!END ZALO cá nhân !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-
-    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!ĐIỆN THOẠI RUNG LẮC!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-
-    <div class="hotline-phone-ring-wrap">
-      <div class="hotline-phone-ring">
-        <div class="hotline-phone-ring-circle"></div>
-        <div class="hotline-phone-ring-circle-fill"></div>
-        <div class="hotline-phone-ring-img-circle">
-          <a href="tel:0979351075" class="pps-btn-img">
-            <img src="https://nguyenhung.net/wp-content/uploads/2019/05/icon-call-nh.png" alt="Gọi điện thoại"
-              width="50">
-          </a>
-        </div>
-      </div>
-      <div class="hotline-bar mobile-dpn">
-        <a href="tel:0979351075">
-          <span class="text-hotline">Gọi ngay!</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!! END ĐIỆN THOẠI RUNG LẮC!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!! END ĐIỆN THOẠI RUNG LẮC!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-
-
     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq section-bg">
       <div class="container" data-aos="fade-up">
@@ -1088,7 +1225,7 @@
           <!-- ###################### Google MAP Yên Bình - Yên Nghĩa - Hà Đông ################### -->
           <div class="col-lg-6">
             <iframe class="mb-4 mb-lg-0"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3726.2372533754947!2d105.7187248!3d20.9429853!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313453b42883cab1%3A0x6bfd5338e46cd59d!2zQuG6pXQgxJDhu5luZyBT4bqjbiBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1629391705622!5m2!1svi!2s"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3726.2372533754947!2d105.7187248!3d20.9429853!3m2!1i1024!2i768!41!3m3!1m2!1s0x313453b42883cab1%3A0x6bfd5338e46cd59d!2zQuG6pXQgxJDhu5luZyBT4bqjbiBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1629391705622!5m2!1svi!2s"
               frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
           </div>
           <!-- ###################### Google MAP Yên Bình - Yên Nghĩa - Hà Đông ################### -->
@@ -1129,14 +1266,6 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-
-    <!-- !nhúng chát zalo DOANH NGHIỆP có Script_zalo  phía dưới! -->
-
-    <div class="zalo-chat-widget zalo-chat-widget-right" data-oaid="3840567101135324995"
-      data-welcome-message="Xin chào! Rất vui khi được hỗ trợ bạn!" data-autopopup="20" data-width="" data-height="">
-    </div>
-
-    <!-- end nhúng chát zalo ZALO DOANH NGHIỆP@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 
     <div class="footer-newsletter">
       <div class="container">
@@ -1218,15 +1347,81 @@
       </div>
     </div>
   </footer><!-- End Footer -->
+  <div id="preloader"> </div>
+
+  <!-- zalo Business $$$$$$$$$$$$$$$$$$$$$$ -->
+  <div class="zalo-business">
+    <div class="zalo-chat-widget zalo-chat-widget-right" data-oaid="3840567101135324995"
+      data-welcome-message="Xin chào! Rất vui khi được hỗ trợ bạn!" data-autopopup="20" data-width="" data-height="">
+    </div>
+    <script src="https://sp.zalo.me/plugins/sdk.js"></script>
+  </div>
+  <!-- Zalo cá nhân ##################### -->
+  <div class="plugin-zalo-ca-nhan">
+    <a href="https://chat.zalo.me/?phone=0979351075" id="linkzalo" target="_blank" rel="noopener noreferrer">
+      <div id="fcta-zalo-tracking" class="fcta-zalo-mess mobile-dpn">
+        <span id="fcta-zalo-tracking">Chat hỗ trợ</span>
+      </div>
+      <div class="fcta-zalo-vi-tri-nut">
+        <div id="fcta-zalo-tracking" class="fcta-zalo-nen-nut">
+          <div id="fcta-zalo-tracking" class="fcta-zalo-ben-trong-nut"> <svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 460.1 436.6">
+              <path fill="currentColor" class="st0"
+                d="M82.6 380.9c-1.8-.8-3.1-1.7-1-3.5 1.3-1 2.7-1.9 4.1-2.8 13.1-8.5 25.4-17.8 33.5-31.5 6.8-11.4 5.7-18.1-2.8-26.5C69 269.2 48.2 212.5 58.6 145.5 64.5 107.7 81.8 75 107 46.6c15.2-17.2 33.3-31.1 53.1-42.7 1.2-.7 2.9-.9 3.1-2.7-.4-1-1.1-.7-1.7-.7-33.7 0-67.4-.7-101 .2C28.3 1.7.5 26.6.6 62.3c.2 104.3 0 208.6 0 313 0 32.4 24.7 59.5 57 60.7 27.3 1.1 54.6.2 82 .1 2 .1 4 .2 6 .2H290c36 0 72 .2 108 0 33.4 0 60.5-27 60.5-60.3v-.6-58.5c0-1.4.5-2.9-.4-4.4-1.8.1-2.5 1.6-3.5 2.6-19.4 19.5-42.3 35.2-67.4 46.3-61.5 27.1-124.1 29-187.6 7.2-5.5-2-11.5-2.2-17.2-.8-8.4 2.1-16.7 4.6-25 7.1-24.4 7.6-49.3 11-74.8 6zm72.5-168.5c1.7-2.2 2.6-3.5 3.6-4.8 13.1-16.6 26.2-33.2 39.3-49.9 3.8-4.8 7.6-9.7 10-15.5 2.8-6.6-.2-12.8-7-15.2-3-.9-6.2-1.3-9.4-1.1-17.8-.1-35.7-.1-53.5 0-2.5 0-5 .3-7.4.9-5.6 1.4-9 7.1-7.6 12.8 1 3.8 4 6.8 7.8 7.7 2.4.6 4.9.9 7.4.8 10.8.1 21.7 0 32.5.1 1.2 0 2.7-.8 3.6 1-.9 1.2-1.8 2.4-2.7 3.5-15.5 19.6-30.9 39.3-46.4 58.9-3.8 4.9-5.8 10.3-3 16.3s8.5 7.1 14.3 7.5c4.6.3 9.3.1 14 .1 16.2 0 32.3.1 48.5-.1 8.6-.1 13.2-5.3 12.3-13.3-.7-6.3-5-9.6-13-9.7-14.1-.1-28.2 0-43.3 0zm116-52.6c-12.5-10.9-26.3-11.6-39.8-3.6-16.4 9.6-22.4 25.3-20.4 43.5 1.9 17 9.3 30.9 27.1 36.6 11.1 3.6 21.4 2.3 30.5-5.1 2.4-1.9 3.1-1.5 4.8.6 3.3 4.2 9 5.8 14 3.9 5-1.5 8.3-6.1 8.3-11.3.1-20 .2-40 0-60-.1-8-7.6-13.1-15.4-11.5-4.3.9-6.7 3.8-9.1 6.9zm69.3 37.1c-.4 25 20.3 43.9 46.3 41.3 23.9-2.4 39.4-20.3 38.6-45.6-.8-25-19.4-42.1-44.9-41.3-23.9.7-40.8 19.9-40 45.6zm-8.8-19.9c0-15.7.1-31.3 0-47 0-8-5.1-13-12.7-12.9-7.4.1-12.3 5.1-12.4 12.8-.1 4.7 0 9.3 0 14v79.5c0 6.2 3.8 11.6 8.8 12.9 6.9 1.9 14-2.2 15.8-9.1.3-1.2.5-2.4.4-3.7.2-15.5.1-31 .1-46.5z">
+              </path>
+            </svg></div>
+          <div id="fcta-zalo-tracking" class="fcta-zalo-text">Chat ngay</div>
+        </div>
+      </div>
+    </a>
+    <script>
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        document.getElementById("linkzalo").href = "https://zalo.me/0979351075";
+      }
+    </script>
+  </div>
+  <!-- Thánh rung lắc ^^^^^^^^^^^^^^^^^^^ -->
+  <div class="hotline-phone-ring-wrap">
+    <div class="hotline-phone-ring">
+      <div class="hotline-phone-ring-circle"></div>
+      <div class="hotline-phone-ring-circle-fill"></div>
+      <div class="hotline-phone-ring-img-circle">
+        <a href="tel:0979351075" class="pps-btn-img">
+          <img src="https://nguyenhung.net/wp-content/uploads/2019/05/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+        </a>
+      </div>
+    </div>
+    <div class="hotline-bar mobile-dpn">
+      <a href="tel:0979351075">
+        <span class="text-hotline">Gọi ngay!</span>
+      </a>
+    </div>
+  </div>
+  <!-- Trở về bên em !!!!!!!!!!!!!!!!!!!!! -->
+  <div class="plugin-backtotop">
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+  </div>
 
 
 
 
 
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></Script>
@@ -1237,8 +1432,6 @@
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="https://sp.zalo.me/plugins/sdk.js"></script>
-
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

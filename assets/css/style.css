@@ -474,9 +474,16 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .container {
   position: relative;
-  bottom: -10vh;
+  bottom: -5vh;
   opacity: 0.85;
 }
+.boemday { 
+  margin: 20px;
+  background:#ccc;
+color:rgb(255, 0, 0);
+opacity: 0.5;
+font-weight: 400;
+text-transform: uppercase;}
 
 #hero h1 {
   margin: 0;
@@ -1994,7 +2001,10 @@ section {
   .fcta-zalo-ben-trong-nut {
   top: -20px;
   }
-  
+  #topbar {
+    font-size: 11px !important;
+    font-weight:500;
+  }
   .sapo_news {
     height: 50vh;
     font-size: 12px;

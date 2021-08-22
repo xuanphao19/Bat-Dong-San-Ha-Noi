@@ -553,8 +553,10 @@ text-transform: uppercase;}
     background-attachment: fixed;
   }
   #hero .container {
-    margin-left: 80px;
+    margin-left: 100px;
   }
+.pkg .sapo_news {
+  height: 56vh;}
 }
 
 @media (max-width: 768px) {
@@ -578,7 +580,7 @@ text-transform: uppercase;}
     bottom: -20vh;
   }
   #hero h1 {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 30px;
   }
   #hero h2 {

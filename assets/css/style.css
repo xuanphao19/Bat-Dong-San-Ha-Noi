@@ -474,7 +474,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .container {
   position: relative;
-  bottom: -5vh;
+  bottom: -15vh;
   opacity: 0.85;
 }
 .boemday { 
@@ -487,10 +487,8 @@ text-transform: uppercase;}
 
 #hero h1 {
   margin: 0;
-  font-size: 48px;
   font-style: italic;
   font-weight: 700;
-  line-height: 56px;
   color: #222222;
   font-family: "Poppins", sans-serif;
 }
@@ -554,6 +552,9 @@ text-transform: uppercase;}
   #hero {
     background-attachment: fixed;
   }
+  #hero .container {
+    margin-left: 80px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -564,11 +565,7 @@ text-transform: uppercase;}
 .news-text {
   font-size: 11px !important;
 }
-
-
-
-
-  
+ 
   #hero:before {
     content: "";
     background: rgba(255, 255, 255, 0) !important;}
@@ -581,7 +578,7 @@ text-transform: uppercase;}
     bottom: -20vh;
   }
   #hero h1 {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 30px;
   }
   #hero h2 {

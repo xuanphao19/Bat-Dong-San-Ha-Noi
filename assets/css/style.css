@@ -564,17 +564,7 @@ text-transform: uppercase;}
 .mobile-dpn {
   display: none !important;
 }
-#newstitle .chaythu-content {
-  width: 95%;
-}
-.chaythu-content .chaythuxemsao {
-  margin: 0;
-  width: 600px;
-  font-size: 20px;
-  font-style: italic;
-}
 
- 
   #hero:before {
     content: "";
     background: rgba(255, 255, 255, 0) !important;}
@@ -659,6 +649,15 @@ newstitle
 }
 
 @media (max-width: 768px) {
+  #newstitle .chaythu-content {
+    width: 95%;
+  }
+  .chaythu-content .chaythuxemsao {
+    margin: 0;
+    width: 600px;
+    font-size: 16px;
+    font-style: italic;
+  }
   @keyframes chaythu {
     0%{
       left: 400px;

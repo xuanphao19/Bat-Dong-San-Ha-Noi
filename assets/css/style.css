@@ -570,27 +570,9 @@ text-transform: uppercase;}
 .chaythu-content .chaythuxemsao {
   width: 400px;
   font-size: 20px;
-  line-height: 40px;
   font-style: italic;
-  -webkit-animation: chaythu 8s linear infinite !important;
 }
-@keyframes chaythu {
-  0%{
-    left: 300px;
-    color: #06ff13;
-  }
-  10% { color: #ff0606; }
-  20% { color: #06ff13; }
-  30% { color: #ffa601; }
-  40% { color: #06ff13; }
-  50% {color: rgb(255, 0, 242)}
-  60% { color: #00fd2a; }
-  70% { color: #ff0606; }
-  80% { color: #06ff13; }
-  90% { color: #dd00f1; }
-  100% { left: -200px;
-  }
-}
+
  
   #hero:before {
     content: "";
@@ -638,9 +620,62 @@ newstitle
 .news-titles{
   width: 100%;
   height: 40px;
-  background:#0068ff;
+  background: #2f7ff3db;
+}
+.chaythu-content {
+  width: 80%;
+  overflow: hidden;
+  margin-left: 4px;
+}
+.chaythuxemsao {
+  position: relative;
+  margin: 0;
+  width: 600px;
+  font-size: 28px;
+  line-height: 40px;
+  font-style: italic;
+  -webkit-animation: chaythu 6s linear infinite !important;
+  animation: chaythu 6s linear infinite !important;
+  z-index: 999;
 }
 
+@keyframes chaythu {
+  0%{
+    left: 900px;
+    color: #06ff13;
+  }
+  10% { color: #ff0606; }
+  20% { color: #06ff13; }
+  30% { color: #ffa601; }
+  40% { color: #06ff13; }
+  50% {color: rgb(255, 0, 242)}
+  60% { color: #00fd2a; }
+  70% { color: #ff0606; }
+  80% { color: #06ff13; }
+  90% { color: #dd00f1; }
+  100% { left: -600px;
+  }
+}
+
+@media (max-width: 768px) {
+  @keyframes chaythu {
+    0%{
+      left: 400px;
+      color: #06ff13;
+    }
+    10% { color: #ff0606; }
+    20% { color: #06ff13; }
+    30% { color: #ffa601; }
+    40% { color: #06ff13; }
+    50% {color: rgb(255, 0, 242)}
+    60% { color: #00fd2a; }
+    70% { color: #ff0606; }
+    80% { color: #06ff13; }
+    90% { color: #dd00f1; }
+    100% { left: -300px;
+    }
+  }
+}
 
 #Newstoday {
   position: relative;
@@ -2355,39 +2390,6 @@ span#fcta-zalo-tracking {
 }
 
 
-
-.chaythu-content {
-  width: 80%;
-  overflow: hidden;
-  margin-left: 4px;
-}
-.chaythuxemsao {
-  position: relative;
-  margin: 0;
-  width: 600px;
-  font-size: 28px;
-  line-height: 40px;
-  font-style: italic;
-  -webkit-animation: chaythu 6s linear infinite !important;
-}
-
-@keyframes chaythu {
-  0%{
-    left: 900px;
-    color: #06ff13;
-  }
-  10% { color: #ff0606; }
-  20% { color: #06ff13; }
-  30% { color: #ffa601; }
-  40% { color: #06ff13; }
-  50% {color: rgb(255, 0, 242)}
-  60% { color: #00fd2a; }
-  70% { color: #ff0606; }
-  80% { color: #06ff13; }
-  90% { color: #dd00f1; }
-  100% { left: -600px;
-  }
-}
 
 
 
